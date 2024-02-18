@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title>Encriptador</title>
 </head>
 <body>
-    <h1>Encriptador de Texto</h1>
+	<header><h1>Encriptador de texto</h1></header>
+	<main>
+		<div class="content-box">
+			<div class="box input-box">
+				<textarea id="input-text" rows="16" placeholder="Escribe un texto..." ></textarea>
+			<p id="rulesadvice" class="notification" >
+				&#9888 El texto no debe contener mayúsculas ni caracteres especiales.
+			</p>
+			</div>
+			<div class="input-buttons">
+				<input id="encrypt" class="button" type="button" value="Encriptar">
+				<input id="decrypt" class="button" type="button" value="Desencriptar">
+			</div>
+		</div>
+		
+		<div class="content-box">
+			<div class="box output-box">
+				<textarea id="output-text" rows="16" readonly></textarea>
+				<p id="textnotfound">
+					<span>Ningún mensaje fue encontrado<br><br></span>
+					Ingresa el texto que desees encriptar o desencriptar.
+				</p>
+				<p id="textcopied" class="notification">¡Texto copiado!</p>
+			</div>
+			<div class="output-buttons">
+				<input id="copy" class="button" type="button" value="Copiar"  >
+			</div>
+		</div>
+	</main>
+	
+	<script type="text/javascript" src="js/index.js"></script>
+	<noscript>Debes habilitar JavaScript para usar esta página.</noscript>
 </body>
 </html>
